@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Roboto' sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(14, 133, 110, 0.9640231092436975) 33%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 6rem;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(221, 221, 221);
+  margin-bottom: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.hero__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social__links {
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  transition: 1s all ease;
+}
+
+/* .social__links:hover {
+  color: red;
+} */
+
+.social__links:visited {
+  color: inherit;
+}
+
+.social__links:not(:last-of-type) {
+  margin-right: 2.5rem;
+}
+
+/* MAIN SECTION */
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: repeat(1fr 1fr);
+    grid-template-areas:
+      'copy1 image1'
+      'image2 copy2'
+      'copy3 image3'
+      'image4 copy4';
+    width: 90%;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.travel__copy {
+  grid-area: copy1;
+  width: 75%;
+}
+
+.travel__img img {
+  grid-area: image1;
+  width: 100%;
+}
+
+.copy {
+  line-height: 1.5rem;
+}
+
+.cycling__copy {
+  grid-area: copy2;
+  width: 75%;
+}
+
+.cycling__img img {
+  grid-area: image2;
+  width: 100%;
+}
+.golf__copy {
+  grid-area: copy3;
+  width: 75%;
+}
+
+.golf__img img {
+  grid-area: image3;
+  width: 100%;
 }
