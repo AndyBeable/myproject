@@ -19,7 +19,7 @@ function Body() {
         </p>
       </div>
       <div className='travel__img'>
-        <img src={Travel} />
+        <img src={Travel} alt='Travel' />
       </div>
       <div className='cycling__copy'>
         <h2>Cycling</h2>
@@ -36,7 +36,7 @@ function Body() {
         </p>
       </div>
       <div className='cycling__img'>
-        <img src={Travel} />
+        <img src={Travel} alt='Cycling' />
       </div>
       <div className='golf__copy'>
         <h2>Golf</h2>
@@ -53,7 +53,7 @@ function Body() {
         </p>
       </div>
       <div className='golf__img'>
-        <img src={Travel} />
+        <img src={Travel} alt='Golf' />
       </div>
     </div>
   );

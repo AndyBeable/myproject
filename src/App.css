@@ -72,6 +72,7 @@ body {
 .travel__copy {
   grid-area: copy1;
   width: 75%;
+  padding-top: 2rem;
 }
 
 .travel__img img {
@@ -86,6 +87,7 @@ body {
 .cycling__copy {
   grid-area: copy2;
   width: 75%;
+  padding: 2rem 0rem 0rem 4rem;
 }
 
 .cycling__img img {
@@ -95,9 +97,71 @@ body {
 .golf__copy {
   grid-area: copy3;
   width: 75%;
+  padding-top: 2rem;
 }
 
 .golf__img img {
   grid-area: image3;
   width: 100%;
+}
+
+.footer__wrapper {
+  height: 7rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 35rem);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(14, 133, 110, 0.9640231092436975) 33%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: rgb(221, 221, 221);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+}
+
+.footer__info {
+  width: 45%;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+
+.footer__contact a {
+  text-decoration: none;
+  margin-bottom: 3px;
+  font-size: 1.2rem;
+  transition: all 1s ease;
+}
+
+.footer__contact a:hover {
+  color: rgba(2, 0, 36, 1);
+}
+
+.footer__contact a {
+  color: inherit;
+}
+
+.footer__social {
+  width: 50%;
+  text-align: center;
+}
+
+.footer__social a {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  color: inherit;
+  transition: all 1s ease;
+}
+
+.footer__social a:hover {
+  color: rgba(2, 0, 36, 1);
 }
