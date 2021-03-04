@@ -1,5 +1,7 @@
 import React from 'react';
 import Travel from '../assets/travel.jpg';
+import Cycling from '../assets/cycling.jpg';
+import Golf from '../assets/golf.jpg';
 
 function Body() {
   return (
@@ -36,7 +38,7 @@ function Body() {
         </p>
       </div>
       <div className='cycling__img'>
-        <img src={Travel} alt='Cycling' />
+        <img src={Cycling} alt='Cycling' />
       </div>
       <div className='golf__copy'>
         <h2>Golf</h2>
@@ -53,7 +55,7 @@ function Body() {
         </p>
       </div>
       <div className='golf__img'>
-        <img src={Travel} alt='Golf' />
+        <img src={Golf} alt='Golf' />
       </div>
     </div>
   );
