@@ -40,9 +40,9 @@ body {
   transition: 1s all ease;
 }
 
-/* .social__links:hover {
-  color: red;
-} */
+.links__container a:hover {
+  color: rgba(2, 0, 36, 1);
+}
 
 .social__links:visited {
   color: inherit;
