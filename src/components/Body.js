@@ -1,3 +1,5 @@
+/* ---- PR ---- */
+
 import React from 'react';
 import Travel from '../assets/travel.jpg';
 import Cycling from '../assets/cycling.jpg';
