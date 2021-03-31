@@ -1,21 +1,20 @@
-/* ---- PR ---- */
-
-import logo from './logo.svg';
-import './App.css';
-import Hero from './components/Hero';
-import Body from './components/Body';
-import Footer from './components/Footer';
+import React, { useEffect, useState } from 'react';
+import Loading from './Loading';
+const url = 'https://course-api.com/react-tours-project';
 
 function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <Hero />
-      </header>
-      <Body />
-      <Footer />
-    </div>
-  );
+  const [loading, setLoading] = useState(true);
+  const [tours, setTours] = useState([]);
+
+  if (loading) {
+    return (
+      <main>
+        <Loading />
+      </main>
+    );
+  }
+
+  return <h1>Tours Project Setup</h1>;
 }
 
 export default App;
